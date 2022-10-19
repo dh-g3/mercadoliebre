@@ -1,0 +1,305 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+* {
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    margin: 0px;
+}
+
+header {
+    background-color: #EAC926;    
+}
+
+
+.navegacion {
+    display:inline-block;
+    flex-wrap: nowrap;
+    font-size: 12px;
+}
+
+
+.site-navbar {
+    display: inline-flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    font-size: 10px;
+    color: black;
+}
+.login {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    align-items: flex-end;
+    font-size: 10px;
+    color: black;
+}
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+}
+
+.top-header div.logo{
+    flex:40%;
+    flex-grow: 0.5;
+    /*width: 40%;*/
+    padding: 10px;
+    align-self: center;
+}
+
+.top-header div.form {
+    flex:50%;
+    flex-grow:0.3;
+    align-self: center;
+    /*width: 40%; */
+    margin: 10px;
+}
+
+.top-header p {
+   /* flex:90%;*/
+    flex-grow:0.2;
+    align-self: center;
+}
+
+header .form .submit{
+    display:inline-block;
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 20px;
+}
+
+header nav {
+    display: none;
+}
+
+p {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.discount {
+    font-size: 16px;
+    margin:0px;
+} 
+
+.description {
+    font-size: 16px;
+    color:#ebebeb;
+}
+
+.description:hover {
+    color: black;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.products .article {
+        flex:100%;
+        flex-grow: 0;
+        flex-wrap: nowrap;
+        
+}
+article {
+    transition: all 1s;
+}
+article:hover {
+    box-shadow: 10px 10px grey; 
+}
+
+form button {
+    transition: all 1s;
+}
+form button:hover {
+    background-color: #0022AA;
+}
+
+header {
+    width: 100%;
+}
+.main-article i {
+    transition: all 2s;
+}
+.main-article i:hover {
+    transform: rotate(-90deg);
+}
+
+top-header {
+    width: 100%;
+}
+.top-header p {
+    text-align: center;
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+footer div.foot h4{
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+footer div.foot p {
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+
+footer div.copywright p {
+    text-align: center;
+}
+
+div.icon {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 90%;
+    /*width: 324px*/
+    margin: auto;
+}
+
+main section article {
+    margin: 10px;
+}
+
+main section article img {
+    width: 100%;
+    text-align: center;
+}
+
+.main-article { 
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.main-article i {
+    padding: 5px;
+    border-radius: 100%;
+    border: 1px #39b54a solid;
+    color: #39b54a;
+}
+
+i.fa-solid {
+    font-family: fontawesome;
+}
+/*
+main section article i {
+    display: block ;
+    font-size: 16 px ;
+    padding: 5 px ;
+    width: 30 px ;
+    height: 30 px ;
+    border: 1 px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50%;
+    position: absolute ;
+    right: 20 px ;
+    top: -15 px ;
+}
+*/
+
+/* TABLET */
+@media (min-width: 361px) {
+    .description {
+       /* color: black;*/
+    }
+
+    main section article img {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header nav {
+        display: block;
+    }
+    header div.burger-menu {
+        display: none;
+    }
+
+    .products .article {
+        flex: 40%;
+        
+    }
+    top-header {
+        flex-wrap: nowrap;   
+    }
+    .top-header div.logo{
+        flex:30%;
+        padding: 10px;
+    }
+    
+    .top-header div.form {
+        flex:30%;
+        width: 40%;
+        margin: 10px;
+    }
+    
+    .top-header p {
+        flex:30%;
+    }
+}
+
+/* DESKTOP*/
+@media (min-width: 768px) {
+    .products .article {
+        flex: 20%;
+    }
+
+   .footer {
+    display: flex;
+   }
+
+   .foot .icon i {
+    transition: all 1s;
+
+   }
+
+   .foot .icon i:hover {
+        color: red;
+    }   
+}
